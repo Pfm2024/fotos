@@ -11,4 +11,6 @@ if fichero is not None:
   col1, col2, col3 = st.columns(3)
   col1.header("Original")
   col1.image(original, use_column_width=True)
+  col2.header("Original")
+  col2.image(original, use_column_width=True)
   
