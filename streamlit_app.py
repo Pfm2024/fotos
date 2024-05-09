@@ -7,4 +7,8 @@ fichero = st.file_uploader("Subir imagen", type=["jpg","png","jpeg"])
 
 if fichero is not None:
   original = Image.open(fichero)
-  st.image(original)
+  # st.image(original)
+  col1, col2, col3 = st.columns(3)
+  col1.header("Original")
+  col1.image(original, use_column_width=True)
+  
