@@ -14,4 +14,6 @@ if fichero is not None:
   gris = original.convert("LA")
   col2.header("Grises")
   col2.image(gris, use_column_width=True)
-  
+  rota = original.rotate(45)
+  col3.header("Rotada")
+  col3.image(rota, use_column_width=True)
