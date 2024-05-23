@@ -17,3 +17,4 @@ if fichero is not None:
   rota = original.rotate(45)
   col3.header("Rotada")
   col3.image(rota, use_column_width=True)
+  col3.slider("angulo", 0, 360, 0)
