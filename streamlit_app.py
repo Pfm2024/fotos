@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 fichero = st.file_uploader("Subir imagen", type=["jpg","png","jpeg"])
-giro = 0
+giro = slider("angulo", 0, 360, 0)
 
 if fichero is not None:
   original = Image.open(fichero)
@@ -18,4 +18,3 @@ if fichero is not None:
   rota = original.rotate(giro)
   col3.header("Rotada")
   col3.image(rota, use_column_width=True)
-  giro = col3.slider("angulo", 0, 360, 0)
