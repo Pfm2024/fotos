@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 fichero = st.file_uploader("Subir imagen", type=["jpg","png","jpeg"])
-giro = slider("angulo", 0, 360, 0)
+giro = st.slider("angulo", 0, 360, 0)
 
 if fichero is not None:
   original = Image.open(fichero)
